@@ -5,9 +5,9 @@ import figlet from "figlet";
 const server = Bun.serve({
   port: 3001,
   fetch(req) {
-     const body = figlet.textSync("Backend de tu sistema juridico legal Funcionando!");
+     const body = figlet.textSync("Bun!");
     return new Response(body);
-    return new Response("Backend de tu sistema juridico legal Funcionando!");
+    return new Response("Bun");
   },
 });
 console.log(`Listening on http://localhost:${server.port} ...`);
