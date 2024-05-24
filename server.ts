@@ -7,7 +7,7 @@ const server = Bun.serve({
   fetch(req) {
      const body = figlet.textSync("Backend de tu sistema juridico legal Funcionando!");
     return new Response(body);
-    return new Response("Bun!");
+    return new Response("Backend de tu sistema juridico legal Funcionando!");
   },
 });
 console.log(`Listening on http://localhost:${server.port} ...`);
